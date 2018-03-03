@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'airstreamregular';
+  font-style: normal;
+  font-weight: normal;
   src: url('fonts/Airstream-webfont.eot');
   src: url('fonts/Airstream-webfont.eot#iefix') format('embedded-opentype'), url('fonts/Airstream-webfont.woff') format('woff'), url('fonts/Airstream-webfont.tff') format('truetype'), url('fonts/Airstream-webfont.svg#lakeshore') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'lakeshore';
+  font-style: normal;
+  font-weight: normal;
   src: url('fonts/LAKESHOR-webfont.eot');
   src: url('fonts/LAKESHOR-webfont.eot#iefix') format('embedded-opentype'), url('fonts/LAKESHOR-webfont.woff') format('woff'), url('fonts/LAKESHOR-webfont.tff') format('truetype'), url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 
 html, body {
@@ -19,10 +19,10 @@ html, body {
 }
 
 body {
+  background: rgb(149, 194, 215, 0.8);
   display: flex;
   flex-direction: column;
   font-size: 10px;
-  background: rgb(149, 194, 215, 0.8);
 }
 
 a {
@@ -37,8 +37,8 @@ left-button {
   background: navy;
   border: none;
   color:white;
-  font-weight: bold;
   font-size: 30px;
+  font-weight: bold;
   line-height: 20px;
   margin-right: auto;
   max-width: 25px;
@@ -50,8 +50,8 @@ right-button {
   border: none;
   bottom:20px;
   color:white;
-  font-weight: bold;
   font-size:30px;
+  font-weight: bold;
   line-height: 20px;
   margin-left: auto;
   max-width: 25px;
@@ -62,15 +62,15 @@ right-button {
 
 .logo-text {
   background: white;
-  text-align: center;
-  text-transform: uppercase;
   font-family: lakeshore;
   font-size: 37px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .main-content {
-  flex: 1 1 auto;
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
 }
 
@@ -79,22 +79,22 @@ right-button {
 }
 
 .thumbnail-item {
-  display: inline-block;
-  min-width: 120px;
-  max-width: 120px;
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  display: inline-block;
+  max-width: 120px;
+  min-width: 120px;
 }
 
 .thumbnail-list {
-  flex: 0 1 auto;
-  order: 2;
   display: flex;
+  flex: 0 1 auto;
   justify-content: space-between;
   list-style: none;
+  order: 2;
+  overflow-x: auto;
   padding: 0;
   white-space: nowrap;
-  overflow-x: auto;
 }
 
 .thumbnail-image {
@@ -103,19 +103,19 @@ right-button {
 }
 
 .thumbnail-title {
-  display: block;
-  margin: 0;
-  padding: 4px 10px;
   background: rgb(96, 125, 139);
   color: rgb(202, 238, 255);
+  display: block;
   font-size: 18px;
+  margin: 0;
+  padding: 4px 10px;
 }
 
 .detail-image-container {
-  flex: 1 1 auto;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
 }
 
 .detail-image-frame {
@@ -128,13 +128,14 @@ right-button {
 }
 
 .detail-image-title {
-  position: absolute;
   bottom: -16px;
-  left: 4px;
-  font-family: airstreamregular;
   color: white;
-  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+  font-family: airstreamregular;
   font-size: 40px;
+  left: 4px;
+  position: absolute;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+
 }
 
 @media all and (min-width: 768px) {
@@ -146,8 +147,8 @@ right-button {
 
   .thumbnail-list {
     flex-direction:column;
-    order: 0;
     margin-left: 20px;
+    order: 0;
   }
 
   .thumbnail-item {
