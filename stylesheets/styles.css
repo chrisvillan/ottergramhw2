@@ -33,6 +33,30 @@ a {
   flex: 0 1 auto;
 }
 
+left-button {
+  background: navy;
+  border: none;
+  color:white;
+  font-weight: bold;
+  line-height: 20px;
+  margin-right: auto;
+  max-width: 20px;
+  min-width: 20px;
+}
+
+right-button {
+  background: navy;
+  border: none;
+  bottom:20px;
+  color:white;
+  font-weight: bold;
+  line-height: 20px;
+  margin-left: auto;
+  max-width: 20px;
+  min-width: 20px;
+  position: relative;
+}
+
 .logo-text {
   background: white;
   text-align: center;
@@ -110,11 +134,12 @@ a {
   font-size: 40px;
 }
 
-@media all and (orientation: landscape) {
+@media all and (min-width: 768px) {
   .main-content {
     flex-direction:row;
     overflow: hidden;
   }
+
 
   .thumbnail-list {
     flex-direction:column;
