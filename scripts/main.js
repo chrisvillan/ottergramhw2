@@ -45,10 +45,10 @@ function getThumbnailsArray() {
 
 // 1. Create the button
 var button = document.createElement("left-button");
-button.innerHTML = "<-";
+button.innerHTML = "<";
 
 var button2 = document.createElement("right-button");
-button2.innerHTML = "->";
+button2.innerHTML = ">";
 // 2. Append somewhere
 var body = document.getElementsByTagName("body")[0];
 body.appendChild(button);
@@ -77,6 +77,7 @@ button2.addEventListener ("click", function() {
   setDetailsFromThumb(thumbnails[i]);
 
 });
+
 
 
 function initializeEvents() {

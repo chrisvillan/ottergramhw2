@@ -38,10 +38,11 @@ left-button {
   border: none;
   color:white;
   font-weight: bold;
+  font-size: 30px;
   line-height: 20px;
   margin-right: auto;
-  max-width: 20px;
-  min-width: 20px;
+  max-width: 25px;
+  min-width: 25px;
 }
 
 right-button {
@@ -50,12 +51,14 @@ right-button {
   bottom:20px;
   color:white;
   font-weight: bold;
+  font-size:30px;
   line-height: 20px;
   margin-left: auto;
-  max-width: 20px;
-  min-width: 20px;
+  max-width: 25px;
+  min-width: 25px;
   position: relative;
 }
+
 
 .logo-text {
   background: white;
