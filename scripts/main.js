@@ -7,30 +7,30 @@ var i = 0;
 function setDetails(imageUrl, titleText) {
   "use strict";
   var detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
-  detailImage.setAttribute("src",imageUrl);
+  detailImage.setAttribute("src", imageUrl);
 
   var detailTitle = document.querySelector(DETAIL_TITLE_SELECTOR);
   detailTitle.textContent = titleText;
 }
 
-function imageFromThumb(thumbnail){
+function imageFromThumb(thumbnail) {
   "use strict";
   return thumbnail.getAttribute("data-image-url");
 }
 
-function titleFromThumb(thumbnail){
+function titleFromThumb(thumbnail) {
   "use strict";
   return thumbnail.getAttribute("data-image-title");
 }
 
-function setDetailsFromThumb(thumbnail){
+function setDetailsFromThumb(thumbnail) {
   "use strict";
   setDetails(imageFromThumb(thumbnail), titleFromThumb(thumbnail));
 }
 
-function addThumbClickHandler(thumb){
+function addThumbClickHandler(thumb) {
   "use strict";
-  thumb.addEventListener("click",function (event){
+  thumb.addEventListener("click", function(event) {
     event.preventDefault();
     setDetailsFromThumb(thumb);
   });
@@ -56,23 +56,23 @@ body.appendChild(button2);
 
 
 // 3. Add event handler
-button.addEventListener ("click", function() {
+button.addEventListener("click", function() {
   // var thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
   var thumbnails = getThumbnailsArray();
-  i=i+1;
-  if(i==5){
-    i=0;
+  i = i + 1;
+  if (i == 5) {
+    i = 0;
   }
   setDetailsFromThumb(thumbnails[i]);
 
 });
 
-button2.addEventListener ("click", function() {
+button2.addEventListener("click", function() {
   // var thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
   var thumbnails = getThumbnailsArray();
-  i=i-1;
-  if(i==-1){
-    i=4;
+  i = i - 1;
+  if (i == -1) {
+    i = 4;
   }
   setDetailsFromThumb(thumbnails[i]);
 
