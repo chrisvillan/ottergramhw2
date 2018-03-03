@@ -33,3 +33,17 @@ function addThumbClickHandler(thumb){
     setDetailsFromThumb(thumb);
   });
 }
+
+function getThumbnailsArray() {
+  "use strict"
+  var thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
+  var thumbnailArray = [].slice.call(thumbnails);
+  return thumbnailArray;
+}
+
+function initializeEvents() {
+  "use strict"
+  var thumbnails = getThumbnailsArray();
+  thumbnails.forEach(addThumbClickHandler);
+}
+initializeEvents();
